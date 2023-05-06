@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.spacer {
+  aspect-ratio: 900/450;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.spacer-top {
+  aspect-ratio: 900/200;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.spacer-bottom {
+  aspect-ratio: 900/200;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+/* 5 is upper */
+.upper-layer {
+  background-image: url('./assets/layered-waves-top-900-200.svg');
+}
+
+/* 6 is lower */
+.bottom-layer {
+  background-image: url('./assets/layered-waves-bottom-900-200.svg');
+}
+
+.default-image {
+  transition: opacity 0.5s ease-in-out;
+}
+
+.hover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+picture:hover .default-image {
+  opacity: 0;
+}
+
+picture:hover .hover-image {
+  opacity: 1;
+}
+
+.dynamic-pt {
+  padding-top: calc(50vw / 4);
+}
+
+.dynamic-py {
+  padding-top: calc(50vw / 4);
+  padding-bottom: calc(50vw / 4);
+}
+
+li {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
