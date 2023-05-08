@@ -17,6 +17,46 @@ const Projects = () => {
     // eslint-disable-next-line
     const iconClasses = 'bg-slate-100 rounded-full p-1 w-[56px] aspect-square border-2 border-[#004AAD]';
 
+    const icons = [
+        {
+            path: python,
+            alt: "python icon"
+        }, 
+        {
+            path: reactIcon,
+            alt: "react icon"
+        }, 
+        {
+            path: html,
+            alt: "html icon"
+        }, 
+        {
+            path: css,
+            alt: "css"
+        }, 
+        {
+            path: javascript,
+            alt: "javascript icon"
+        }, 
+        {
+            path: tailwind,
+            alt: "tailwind css icon"
+
+        }, 
+        {
+            path: rails,
+            alt: "rails icon"
+        }
+    ]
+
+    const listItems = icons.map(icon => {
+        return (
+            <li>
+                <img src={icon.path} alt={icon.alt} className={classNames(iconClasses)}/>
+            </li>
+        )
+    })
+
     return (
         <div className="relative h-fit " id="project-container">
             <div className='spacer-top upper-layer absolute top-0'></div>
@@ -25,7 +65,8 @@ const Projects = () => {
                 <div className="flex flex-col gap-0 md:flex-row md:gap-12 items-center">
                     <h2 className="text-2xl mb-6 min-w-fit">Tech Stack</h2>
                     <ul className="flex flex-wrap md:flex-nowrap justify-between min-w-[80%]">
-                        <li>
+                        {listItems}
+                        {/* <li>
                             <img src={python} alt="python logo" 
                             className={classNames(iconClasses)}/>
                         </li>
@@ -52,7 +93,7 @@ const Projects = () => {
                         <li>
                             <img src={rails} alt="rails logo" 
                             className={classNames(iconClasses)}/>
-                        </li>
+                        </li> */}
                         {/* <li>
                             <img src={python} alt="python logo" className="border-violet-500 bg-slate-100 border-4 rounded-full"/>
                         </li> */}
