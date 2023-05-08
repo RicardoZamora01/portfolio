@@ -6,35 +6,17 @@ import python from "../assets/python-icon.svg"
 import rails from "../assets/rails-icon.svg"
 import javascript from "../assets/javascript-icon.svg"
 // import progress from "../assets/progress.svg"
-import ramen from "../assets/ramen.png"
 import cat from "../assets/cat.svg"
-import counter from "../assets/counter-proj.png"
 import classNames from 'classnames';
 import githubIcon from "../assets/github-64.svg"
+import newPageIcon from "../assets/external-link.svg"
+import projects from "../constants"
 
 
 const Projects = () => {
     // eslint-disable-next-line
     const iconClasses = 'bg-slate-100 rounded-full p-1 w-[56px] aspect-square border-2 border-[#004AAD]';
 
-    const projects = [
-        {
-            name: "TRJ1 COUNTER App", 
-            description: "This app takes COUNTER 5 TR_J1 reports and subscription costs for a journal package and calculates the cost per use and journal usage distribution for the time periods covered by the TR-J1 reports.", 
-            link: "", 
-            github: "https://github.com/cdeljunco/COUNTER_viz", 
-            image: counter,
-            techStack: ["Python"]
-        },
-        {
-            name: "Instant Ramen Report", 
-            description: "This webpage explores the complex impact of instant ramen on global food systems and society as a whole, weighing its benefits and drawbacks and encouraging thoughtful consumption.", 
-            link: "https://instant-ramen-global.web.app/", 
-            github: "https://github.com/RicardoZamora01/instant-ramen-globalization",
-            image: ramen, 
-            techStack: ["React", "Tailwind", "DaisyUI"]
-        }
-    ]
     return (
         <div className="relative h-fit " id="project-container">
             <div className='spacer-top upper-layer absolute top-0'></div>
@@ -94,21 +76,21 @@ const Projects = () => {
                                             <span key={index} className="bg-violet-700 px-4 py-2 my-2 rounded-lg">{tech}</span>
                                         ))}
                                     </div>
-                                    <div className="flex flex-wrap gap-2 items-center align-middle md:flex-row md:justify-center my-2">
+                                    <div className="flex flex-wrap gap-2 items-center align-middle md:flex-row justify-center my-4">
                                         <a href={project.github} target="_black" rel="noreferrer" className="flex items-center">
                                             <span className="text-2xl mr-2">Code</span>
-                                            <img src={githubIcon} alt="github icon" />
+                                            <img src={githubIcon} alt="github icon" className="w-[2.75rem]"/>
                                         </a>
                                     </div>
                                 </div>
                                 ) : (
                                 <div>
                                     <a href={project.link} target="_blank" rel="noreferrer">
-                                    <img 
-                                        src={project.image === "" ? cat : project.image} 
-                                        alt={project.name}
-                                        className="md:max-h-96 object-contain rounded-sm"
-                                    />
+                                        <img 
+                                            src={project.image === "" ? cat : project.image} 
+                                            alt={project.name}
+                                            className="md:max-h-96 object-contain rounded-sm"
+                                        />
                                     </a>
                                     <h1 className="text-xl mt-4 mx-2 font-bold">{project.name}</h1>
                                     <p className="my-4 mx-2">{project.description}</p>
@@ -117,10 +99,14 @@ const Projects = () => {
                                             <span key={index} className="bg-violet-700 px-4 py-2 my-2 rounded-lg">{tech}</span>
                                         ))}
                                     </div>
-                                    <div className="flex flex-wrap gap-2 items-center align-middle md:flex-row md:justify-center my-2">
-                                        <a href={project.github} target="_black" rel="noreferrer" className="flex items-center">
+                                    <div className="flex flex-wrap gap-8 items-center align-middle md:flex-row justify-center my-4">
+                                        <a href={project.github} target="_blank" rel="noreferrer" className="flex items-center">
                                             <span className="text-2xl mr-2">Code</span>
-                                            <img src={githubIcon} alt="github icon" />
+                                            <img src={githubIcon} alt="github icon" className="w-[2.75rem]"/>
+                                        </a>
+                                        <a href={project.link} target="_blank" rel="noreferrer" className="flex items-center">
+                                            <span className="text-2xl mr-2">Live</span>
+                                            <img src={newPageIcon} alt="new page icon" className="w-[2.75rem]" /> 
                                         </a>
                                     </div>
                                 </div>
