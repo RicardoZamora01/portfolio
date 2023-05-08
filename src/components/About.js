@@ -4,9 +4,9 @@ const About = () => {
     return (
         <div className="relative dynamic-py flex items-center justify-center px-4 sm:px-10 min-h-fit" id="about">
             <div className='spacer-top upper-layer absolute top-0'></div>
-            <div className="flex flex-col md:flex-row items-center justify-center p-2 md:p-14 rounded-2xl box-border border-2 min-w-fit">
+            <div className="flex flex-col md:flex-row items-center justify-center p-2 md:p-14 rounded-2xl box-border border-2 border-violet-700 min-w-fit">
                 <div className="m-10">
-                    <img className="max-w-xs md:max-w-sm rounded-full shadow-2xl " src={culture} alt="mexican culture" />
+                    <img className="max-w-xs md:max-w-sm rounded-full shadow-2xl" src={culture} alt="mexican culture" />
                     {/* <p className="text-primary-content max-w-l">Come caca</p> */}
                 </div>
                 <div className="min-w-[40%] p-5 md:p-2 mx-2 md:mx-10 max-w-xl">

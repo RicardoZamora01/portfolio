@@ -10,6 +10,7 @@ import ramen from "../assets/ramen.png"
 import cat from "../assets/cat.svg"
 import counter from "../assets/counter-proj.png"
 import classNames from 'classnames';
+import githubIcon from "../assets/github-64.svg"
 
 
 const Projects = () => {
@@ -88,6 +89,17 @@ const Projects = () => {
                                     /> 
                                     <h1 className="text-xl my-4 mx-2 font-bold">{project.name}</h1>
                                     <p className="my-4 mx-2">{project.description}</p>
+                                    <div className="flex flex-wrap justify-center items-center gap-2 my-2 mx-2">
+                                        {project.techStack.map((tech, index) => (
+                                            <span key={index} className="bg-violet-700 px-4 py-2 my-2 rounded-lg">{tech}</span>
+                                        ))}
+                                    </div>
+                                    <div className="flex flex-wrap gap-2 items-center align-middle md:flex-row md:justify-center my-2">
+                                        <a href={project.github} target="_black" rel="noreferrer" className="flex items-center">
+                                            <span className="text-2xl mr-2">Code</span>
+                                            <img src={githubIcon} alt="github icon" />
+                                        </a>
+                                    </div>
                                 </div>
                                 ) : (
                                 <div>
@@ -99,11 +111,17 @@ const Projects = () => {
                                     />
                                     </a>
                                     <h1 className="text-xl mt-4 mx-2 font-bold">{project.name}</h1>
-                                    <p className="mt-4 mx-2">{project.description}</p>
-                                    <div className="flex flex-wrap justify-start items-center gap-2 my-2 mx-2">
+                                    <p className="my-4 mx-2">{project.description}</p>
+                                    <div className="flex flex-wrap justify-center items-center gap-2 my-2 mx-2">
                                         {project.techStack.map((tech, index) => (
-                                            <span key={index} className="bg-gray-300 px-2 py-1 rounded-lg">{tech}</span>
+                                            <span key={index} className="bg-violet-700 px-4 py-2 my-2 rounded-lg">{tech}</span>
                                         ))}
+                                    </div>
+                                    <div className="flex flex-wrap gap-2 items-center align-middle md:flex-row md:justify-center my-2">
+                                        <a href={project.github} target="_black" rel="noreferrer" className="flex items-center">
+                                            <span className="text-2xl mr-2">Code</span>
+                                            <img src={githubIcon} alt="github icon" />
+                                        </a>
                                     </div>
                                 </div>
                             )}
