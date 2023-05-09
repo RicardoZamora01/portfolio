@@ -1,53 +1,14 @@
-import html from "../assets/html-icon.svg"
-import css from "../assets/css3-icon.svg"
-import reactIcon from "../assets/react-icon.svg"
-import tailwind from "../assets/tailwindcss-icon.svg"
-import python from "../assets/python-icon.svg"
-import rails from "../assets/rails-icon.svg"
-import javascript from "../assets/javascript-icon.svg"
 // import progress from "../assets/progress.svg"
 import cat from "../assets/cat.svg"
 import classNames from 'classnames';
-import githubIcon from "../assets/github-64.svg"
-import newPageIcon from "../assets/external-link.svg"
-import projects from "../constants"
+import githubIcon from "../assets/github-64.svg";
+import newPageIcon from "../assets/external-link.svg";
+import { projects, icons } from "../constants";
 
 
 const Projects = () => {
     // eslint-disable-next-line
     const iconClasses = 'bg-slate-100 rounded-full p-1 w-[56px] aspect-square border-2 border-[#004AAD]';
-
-    const icons = [
-        {
-            path: python,
-            alt: "python icon"
-        }, 
-        {
-            path: reactIcon,
-            alt: "react icon"
-        }, 
-        {
-            path: html,
-            alt: "html icon"
-        }, 
-        {
-            path: css,
-            alt: "css"
-        }, 
-        {
-            path: javascript,
-            alt: "javascript icon"
-        }, 
-        {
-            path: tailwind,
-            alt: "tailwind css icon"
-
-        }, 
-        {
-            path: rails,
-            alt: "rails icon"
-        }
-    ]
 
     const listItems = icons.map(icon => {
         return (
@@ -66,37 +27,6 @@ const Projects = () => {
                     <h2 className="text-2xl mb-6 min-w-fit">Tech Stack</h2>
                     <ul className="flex flex-wrap md:flex-nowrap justify-between min-w-[80%]">
                         {listItems}
-                        {/* <li>
-                            <img src={python} alt="python logo" 
-                            className={classNames(iconClasses)}/>
-                        </li>
-                        <li>
-                            <img src={reactIcon} alt="react logo" 
-                            className={classNames(iconClasses)}/>
-                        </li>
-                        <li>
-                            <img src={html} alt="html logo" 
-                            className={classNames(iconClasses)}/>
-                        </li>
-                        <li>
-                            <img src={css} alt="css logo" 
-                            className={classNames(iconClasses)}/>
-                        </li>
-                        <li>
-                            <img src={javascript} alt="javascript logo" 
-                            className={classNames(iconClasses)}/>
-                        </li>
-                        <li>
-                            <img src={tailwind} alt="tailwind logo" 
-                            className={classNames(iconClasses)}/>
-                        </li>
-                        <li>
-                            <img src={rails} alt="rails logo" 
-                            className={classNames(iconClasses)}/>
-                        </li> */}
-                        {/* <li>
-                            <img src={python} alt="python logo" className="border-violet-500 bg-slate-100 border-4 rounded-full"/>
-                        </li> */}
                     </ul>
                 </div>
                 <section className="grid md:grid-cols-2 content-center align-middle gap-12 p-10">
