@@ -1,4 +1,4 @@
-import culture from "../assets/mx.jpg"
+import culture from "../assets/mx.jpg";
 
 const About = () => {
     return (

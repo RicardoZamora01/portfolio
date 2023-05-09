@@ -1,4 +1,5 @@
-import logo from "../assets/rz-bird-logo.png"
+import logo from "../assets/bird_logo.svg"
+
 
 const Navbar = () => {
     return (

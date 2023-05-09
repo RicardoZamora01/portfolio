@@ -1,11 +1,13 @@
-import headshot from "../assets/Zamora_Ricardo.png"
-import ImageOnHover from "./ImageOnHover"
+import headshot from "../assets/Zamora_Ricardo.png";
+import ImageOnHover from "./ImageOnHover";
+
 const Hero = () => {
 
     const handleClick = () => {
         const element = document.getElementById('about');
         element.scrollIntoView({behavior: 'smooth'});
     }
+    
     return ( 
         <div className="hero h-screen min-h-fit relative" style={{ backgroundImage: `url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg")` }} id="Home" >
             <div className="hero-overlay bg-opacity-60"></div>
