@@ -9,7 +9,7 @@ const Hero = () => {
     }
     
     return ( 
-        <div className="hero h-screen min-h-fit relative" style={{ backgroundImage: `url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg")` }} id="Home" >
+        <div className="hero min-h-screen relative" style={{ backgroundImage: `url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg")` }} id="Home" >
             <div className="hero-overlay bg-opacity-60"></div>
             <div className="hero-content text-center text-neutral-content flex-col md:flex-row z-10">
                 <div className="max-w-2xl mr-8">
