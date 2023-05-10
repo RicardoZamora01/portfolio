@@ -8,7 +8,7 @@ const Contact = () => {
             <div className="flex flex-col px-8 dynamic-pt">
                 <h1 className="text-primary text-4xl mb-4">Contact</h1>
                 <h2 className="text-2xl mb-8">I'm always open for a chat!</h2>
-                <section className="flex flex-row gap-24 pb-12">
+                <section className="flex flex-col md:flex-row gap-24 pb-12">
                     <div className="flex flex-row items-center">
                         <img src={mailbox} alt="mailbox icon" />
                         <h1 className="pl-3 text-xl">Oakland, CA</h1>
