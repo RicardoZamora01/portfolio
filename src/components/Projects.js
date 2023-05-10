@@ -21,7 +21,7 @@ const Projects = () => {
     return (
         <div className="relative h-fit " id="project-container">
             <div className='spacer-top upper-layer absolute top-0'></div>
-            <div className="flex-col dynamic-pt px-8" id="project-content">
+            <div className="flex-col dynamic-py px-8" id="project-content">
                 <h1 className="text-primary text-4xl mb-8">Projects</h1>
                 <div className="flex flex-col gap-0 md:flex-row md:gap-12 items-center">
                     <h2 className="text-2xl mb-6 min-w-fit">Tech Stack</h2>
@@ -65,7 +65,7 @@ const Projects = () => {
                                     </a>
                                     <h1 className="text-xl mt-4 mx-2 font-bold">{project.name}</h1>
                                     <p className="my-4 mx-2">{project.description}</p>
-                                    <div className="flex flex-wrap justify-center items-center gap-2 my-2 mx-2">
+                                    <div className="flex flex-wrap justify-center items-center gap-3 my-2 mx-2">
                                         {project.techStack.map((tech, index) => (
                                             <span key={index} className="bg-violet-700 px-4 py-2 my-2 rounded-lg">{tech}</span>
                                         ))}
@@ -87,6 +87,7 @@ const Projects = () => {
                     })}
                 </section>
             </div>
+            <div className='spacer-bottom bottom-layer absolute bottom-0'></div>
         </div>
     );
 }
