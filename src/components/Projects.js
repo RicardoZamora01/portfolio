@@ -21,7 +21,7 @@ const Projects = () => {
     return (
         <div className="relative h-fit " id="project-container">
             <div className='spacer-top upper-layer absolute top-0'></div>
-            <div className="flex-col dynamic-py px-8" id="project-content">
+            <div className="flex-col dynamic-py px-4 md:px-2" id="project-content">
                 <h1 className="text-primary text-4xl mb-8">Projects</h1>
                 <div className="flex flex-col gap-0 md:flex-row md:gap-12 items-center">
                     <h2 className="text-2xl mb-6 min-w-fit">Tech Stack</h2>
@@ -29,12 +29,12 @@ const Projects = () => {
                         {listItems}
                     </ul>
                 </div>
-                <section className="grid md:grid-cols-2 content-center align-middle gap-12 p-10">
+                <section className="grid md:grid-cols-2 content-center align-middle gap-12 py-8 md:p-10">
                     {projects.map((project) => {
                     return (
                         <div className="md:my-10 border-4 hover:shadow-2xl rounded-lg border-violet-700 overflow-hidden flex flex-col content-center justify-between max-h-fit min-w-full max-w-2xl">
                             {project.link === "" ? (
-                                <div>
+                                <div className="z-10">
                                     <img 
                                         src={project.image === "" ? cat : project.image} 
                                         alt={project.name}
@@ -55,7 +55,7 @@ const Projects = () => {
                                     </div>
                                 </div>
                                 ) : (
-                                <div>
+                                <div className="z-10">
                                     <a href={project.link} target="_blank" rel="noreferrer">
                                         <img 
                                             src={project.image === "" ? cat : project.image} 
