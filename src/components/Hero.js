@@ -4,12 +4,12 @@ import ImageOnHover from "./ImageOnHover";
 const Hero = () => {
 
     const handleClick = () => {
-        const element = document.getElementById('about');
+        const element = document.getElementById('about-container');
         element.scrollIntoView({behavior: 'smooth'});
     }
     
     return ( 
-        <div className="hero min-h-screen relative" style={{ backgroundImage: `url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg")` }} id="Home" >
+        <div className="hero min-h-screen relative" style={{ backgroundImage: `url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg")` }} id="home" >
             <div className="spacer-bottom bottom-layer absolute bottom-0 z-0"></div>
             <div className="hero-overlay bg-opacity-60"></div>
             <div className="hero-content text-center text-neutral-content flex-col md:flex-row z-10">
