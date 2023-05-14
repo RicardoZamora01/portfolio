@@ -2,7 +2,7 @@ import culture from "../assets/mx.jpg";
 
 const About = () => {
     return (
-        <div className="relative dynamic-py flex items-center justify-center px-4 sm:px-10 min-h-fit" id="about">
+        <div className="relative dynamic-py flex items-center justify-center px-4 sm:px-10 min-h-fit" id="about-container">
             <div className='spacer-top upper-layer absolute top-0'></div>
             <div className="flex flex-col md:flex-row items-center justify-center p-2 md:p-14 rounded-2xl box-border border-2 border-violet-700 min-w-fit">
                 <div className="m-10">
