@@ -33,7 +33,6 @@ const Navbar = () => {
                 <label tabIndex={0} className="btn px-0 m-0 bg-transparent border-transparent hover:bg-transparent hover:border-transparent" onClick={handleDropdownClick}>
                     <img src={menu} alt="menu icon" />
                 </label>
-                <ul tabIndex={0} className="dropdown-content menu p-2  shadow bg-base-100 rounded-box w-52">
                 {isDropdownOpen && (
                     <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
                         <li><a onClick={() => handleClick("home")}>Home</a></li>
@@ -42,7 +41,6 @@ const Navbar = () => {
                         <li><a onClick={() => handleClick("contact-container")}>Contact</a></li>
                     </ul>
                 )}
-                </ul>
             </div>
         </div>
     )
