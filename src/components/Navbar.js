@@ -1,12 +1,22 @@
-import logo from "../assets/bird_logo.svg"
+import { useState } from "react";
+import logo from "../assets/bird_logo.svg";
+import menu from "../assets/menu-icon.svg";
 
 const Navbar = () => {
+    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
     const handleClick = (idName) => {
         const element = document.getElementById(idName);
         element.scrollIntoView({behavior: 'smooth'});
+        setIsDropdownOpen(false); // close the dropdown after clicking a link
+    }
+
+    const handleDropdownClick = () => {
+      setIsDropdownOpen(!isDropdownOpen); // toggle the dropdown on button click
     }
 
     return (
+        
         <div className="navbar bg-base-100">
             <div className="flex-1">
                 <img src={logo} alt="logo" className=" max-w-[6rem] aspect-square p-2"/>
@@ -18,9 +28,21 @@ const Navbar = () => {
                     <li key="Projects"><button onClick={() => handleClick("project-container")}>Projects</button></li>
                     <li key="Contact"><button onClick={() => handleClick("contact-container")}>Contact</button></li>
                 </ul>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="m-1 w-6 h-6 visible sm:invisible">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
-                </svg>
+            </div>
+            <div className="dropdown dropdown-end sm:hidden">
+                <label tabIndex={0} className="btn px-0 m-0 bg-transparent border-transparent hover:bg-transparent hover:border-transparent" onClick={handleDropdownClick}>
+                    <img src={menu} alt="menu icon" />
+                </label>
+                <ul tabIndex={0} className="dropdown-content menu p-2  shadow bg-base-100 rounded-box w-52">
+                {isDropdownOpen && (
+                    <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a onClick={() => handleClick("home")}>Home</a></li>
+                        <li><a onClick={() => handleClick("about-container")}>About</a></li>
+                        <li><a onClick={() => handleClick("project-container")}>Projects</a></li>
+                        <li><a onClick={() => handleClick("contact-container")}>Contact</a></li>
+                    </ul>
+                )}
+                </ul>
             </div>
         </div>
     )
