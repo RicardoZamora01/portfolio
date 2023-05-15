@@ -11,10 +11,10 @@ const Footer = () => {
                 <p>Copyright © 2023 - All right reserved</p>
             </div> 
             <div className="grid-flow-col gap-4 justify-self-center md:justify-self-end">
-                <a href={"https://www.linkedin.com/in/zamora-ricardo/"}>
+                <a href={"https://www.linkedin.com/in/zamora-ricardo/"} target="_blank" rel="noreferrer">
                     <img src={linkedin} alt="linked in logo" className="w-12"/>
                 </a>
-                <a href={"https://github.com/RicardoZamora01"}>
+                <a href={"https://github.com/RicardoZamora01"} target="_blank" rel="noreferrer">
                     <img src={github} alt="github logo" className="w-12"/>
                 </a>
             </div>
