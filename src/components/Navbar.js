@@ -35,10 +35,10 @@ const Navbar = () => {
                 </label>
                 {isDropdownOpen && (
                     <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
-                        <li><a onClick={() => handleClick("home")}>Home</a></li>
-                        <li><a onClick={() => handleClick("about-container")}>About</a></li>
-                        <li><a onClick={() => handleClick("project-container")}>Projects</a></li>
-                        <li><a onClick={() => handleClick("contact-container")}>Contact</a></li>
+                        <li><button onClick={() => handleClick("home")}>Home</button></li>
+                        <li><button onClick={() => handleClick("about-container")}>About</button></li>
+                        <li><button onClick={() => handleClick("project-container")}>Projects</button></li>
+                        <li><button onClick={() => handleClick("contact-container")}>Contact</button></li>
                     </ul>
                 )}
             </div>
