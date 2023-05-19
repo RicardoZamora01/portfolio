@@ -1,4 +1,3 @@
-// import logo from "../assets/rz-bird-logo.png";
 import logo from "../assets/bird_logo.svg";
 import linkedin from "../assets/linkedin-64.svg";
 import github from "../assets/github-64.svg";

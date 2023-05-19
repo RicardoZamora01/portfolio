@@ -7,7 +7,6 @@ const About = () => {
             <div className="flex flex-col md:flex-row items-center justify-center p-2 md:p-14 rounded-2xl box-border border-2 border-violet-700 min-w-fit">
                 <div className="m-10">
                     <img className="max-w-cust md:max-w-sm rounded-full shadow-2xl" src={culture} alt="mexican culture" />
-                    {/* <p className="text-primary-content max-w-l">Come caca</p> */}
                 </div>
                 <div className="min-w-[40%] p-5 md:p-2 mx-2 md:mx-10 max-w-xl">
                     <p className="max-w-2xl text-primary text-3xl mb-5">About Me</p>

@@ -1,4 +1,3 @@
-// import progress from "../assets/progress.svg";
 import cat from "../assets/cat.svg";
 import classNames from 'classnames';
 import githubIcon from "../assets/github-64.svg";
