@@ -81,3 +81,7 @@ li {
 .max-w-cust {
   max-width: calc(60vw);
 }
+
+.pr-cust {
+  padding-right: calc(1vw);
+}

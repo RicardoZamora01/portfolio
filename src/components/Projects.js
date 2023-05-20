@@ -21,9 +21,9 @@ const Projects = () => {
         <div className="relative h-fit " id="project-container">
             <div className='spacer-top upper-layer absolute top-0'></div>
             <div className="flex-col dynamic-py px-4 md:px-2" id="project-content">
-                <h1 className="text-primary text-4xl mb-8">Projects</h1>
-                <div className="flex flex-col gap-0 md:flex-row md:gap-12 items-center">
-                    <h2 className="text-2xl mb-6 min-w-fit">Tech Stack</h2>
+                <h1 className="text-primary text-4xl mb-8 px-8">Projects</h1>
+                <div className="flex flex-col gap-0 md:flex-row items-center">
+                    <h2 className="text-2xl mb-6 md:mb-0 min-w-fit pl-8 pr-cust">Tech Stack</h2>
                     <ul className="flex flex-wrap md:flex-nowrap justify-between min-w-[80%]">
                         {listItems}
                     </ul>

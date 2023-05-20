@@ -4,7 +4,7 @@ const About = () => {
     return (
         <div className="relative dynamic-py flex items-center justify-center px-4 sm:px-10 min-h-fit" id="about-container">
             <div className='spacer-top upper-layer absolute top-0'></div>
-            <div className="flex flex-col md:flex-row items-center justify-center p-2 md:p-14 rounded-2xl box-border border-2 border-violet-700 min-w-fit">
+            <div className="flex flex-col md:flex-row items-center justify-center p-2 md:p-12 rounded-2xl box-border border-2 border-violet-700 min-w-fit">
                 <div className="m-10">
                     <img className="max-w-cust md:max-w-sm rounded-full shadow-2xl" src={culture} alt="mexican culture" />
                 </div>
