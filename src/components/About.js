@@ -10,17 +10,21 @@ const About = () => {
                 </div>
                 <div className="min-w-[40%] p-5 md:p-2 mx-2 md:mx-10 max-w-xl">
                     <p className="max-w-2xl text-primary text-3xl mb-5">About Me</p>
-                    <p className="whitespace-normal"> I've always been a person who put the needs of the community first. 
-                                                            I set out to influence and educate communities after broadening my skill set at 
-                                                            Wesleyan University. In the past, I've been able to give back to my communities 
-                                                            by imparting technical knowledge on data structures, algorithms, and software 
-                                                            engineering through technical education and mentoring. I was able to increase 
-                                                            my reach through my prior software engineering internship at Handshake by leveraging 
-                                                            professional options for college students. I'm hoping to foster curiosity in every 
-                                                            environment and push myself to look for inspiration in myself and my team. 
-                                                            I have aspirations to develop professionally, work for an organization 
-                                                            that values innovation, and make technology more accessible in order to improve 
-                                                            the world.
+                    <p className="whitespace-normal">
+                        I strive to foster curiosity in any environment and continuously seek 
+                        inspiration from myself and my team. I believe in fostering curiosity 
+                        and pushing myself to be inspired by both myself and my team. I have 
+                        aspirations to develop professionally, work for an organization that 
+                        values innovation, and make technology more accessible in order to 
+                        improve the world. I am committed to growing my skills in full-stack 
+                        software engineering and contributing to meaningful change.
+                        <br /><br />
+                        Collaborative team environments fuel my passion, and I thrive on 
+                        utilizing agile methodologies to drive innovative initiatives that 
+                        bring about tangible impact. As a lifelong learner, I understand the 
+                        importance of self-challenge as well as seeking support from others 
+                        when needed. I strongly believe in nurturing curiosity within myself 
+                        and my team, constantly pushing the boundaries of our potential.
                     </p>
                 </div>
             </div>

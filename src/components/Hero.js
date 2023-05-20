@@ -18,12 +18,6 @@ const Hero = () => {
                     <p className="mb-5">
                         I am a versatile team player and software engineer who is passionate about 
                         leveraging data analysis to have a lasting impact in underrepresented communities. 
-                        {/* I thrive in team environments and enjoy using agile methodologies to innovate 
-                        initiatives that make a tangible difference. I believe in fostering curiosity 
-                        and pushing myself to be inspired by both myself and my team. As a lifelong learner, 
-                        I know when to challenge myself and when to seek help from others. 
-                        I am excited to be a part of an organization with a strong mission that puts the community first, 
-                        and I am committed to growing my skills and contributing to meaningful change.  */}
                     </p>
                     <span className="flex gap-8 my-4 md:my-8 justify-center">
                         <ImageOnHover name={"LinkedIn"} href={"https://www.linkedin.com/in/zamora-ricardo/"}/>
